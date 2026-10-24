@@ -1,0 +1,3 @@
+interface:
+  display_name: "LightCraft 修图"
+  short_description: "观察照片、判断调整、调用 LightCraft 并核对预览与导出结果"
