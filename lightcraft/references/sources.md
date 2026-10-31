@@ -58,3 +58,11 @@
 | [darktable color zones](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/color-zones/) | 按颜色范围调整仍需关注同色物体、范围过渡和空间隔离 | 不把颜色范围当对象识别，也不移植 Lab 曲线 |
 
 [明暗与控件选择](tone-and-tools.md)、[调色实践](color-practice.md)、[局部处理](local-editing.md) 中的诊断路径、试调步长、题材验收和风格候选为本 Skill 的条件化综合；它们尚未逐项完成实片验证。[两张夜景案例](cases.md) 仅陈述已有操作与观察，没有编造失败尝试或用户偏好。
+
+## Emulsion 参数提炼与照片筛选（2026-10-25）
+
+- [EmulsionPresets 固定版本](https://github.com/peva3/EmulsionPresets/tree/0cdb71c60603867a046bc92c63617feec7894dd1)：选择六个基础版 XMP，来源与每个文件 SHA256 见 [参数库](emulsion-recipes.json)。这是作者的创意配方，不把社区范围/均值或胶片名称当测量真值。
+- LightCraft [XMP 转换器](https://github.com/storytold/lightcraft/blob/23e181283cb448205d865e8cd288b56afe987986/crates/engine/src/crs.rs#L309-L396)、[导入与 unmapped 报告](https://github.com/storytold/lightcraft/blob/23e181283cb448205d865e8cd288b56afe987986/crates/engine/src/cmd/preset_files.rs#L16-L94)、[profile 名称解析](https://github.com/storytold/lightcraft/blob/23e181283cb448205d865e8cd288b56afe987986/crates/engine/src/profile_refs.rs)：用于识别实际导入遗漏、基础 profile 替代和数值/渲染边界；另做了六份原始/别名修正 XMP 的运行读回。
+- [scikit-image v0.25.2 样本说明](https://github.com/scikit-image/scikit-image/blob/v0.25.2/skimage/data/_fetchers.py)：NASA Eileen Collins 人像与 SpaceX 火箭照片的 public domain 说明，Rachel Michetti 咖啡图的 CC0 说明。直接使用该版本的 PNG/JPEG 作为已显影测试输入，未当 RAW 或用户正样本；未随 Skill 包分发。
+- 实际渲染与筛选、有限范围参数、自动筛选不代表用户偏好的边界，集中写在 [风格提炼与自动筛选](emulsion-workflow.md)。本机工作目录另存原始材料、输入授权来源/哈希、逐图设置、前后图及 Claude Code 会话记录；这些执行材料不进入日常 Skill 上下文。
+- 六份参数属于对 EmulsionPresets 的改编，附 [上游 MIT 许可](emulsion-license.txt)，保留 peva3 的版权声明。

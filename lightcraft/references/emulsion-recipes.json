@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "source_revision": "0cdb71c60603867a046bc92c63617feec7894dd1",
+  "tested_lightcraft": "0.13.0",
+  "recipes": [
+    {
+      "id": "hp5-mono",
+      "name": "Ilford HP5 Plus",
+      "status": "auto-pass-limited-scope",
+      "source": {
+        "path": "Presets/Black-White/Ilford HP5 Plus.xmp",
+        "url": "https://github.com/peva3/EmulsionPresets/blob/0cdb71c60603867a046bc92c63617feec7894dd1/Presets/Black-White/Ilford%20HP5%20Plus.xmp",
+        "sha256": "cb3e98c89cb574158b5ac97ee53ddce29ca6ff4e074254e2e40ac1bcc01806e1",
+        "original_exposure": null,
+        "original_grain": {
+          "GrainAmount": "36.3",
+          "GrainSize": "27.5",
+          "GrainRoughness": "50"
+        }
+      },
+      "settings": {
+        "light": {
+          "contrast": 7.5,
+          "blacks": -11.3
+        },
+        "treatment": "bw",
+        "bw_mix": {
+          "red": 15.0,
+          "orange": 10.0,
+          "yellow": 5.0,
+          "green": -5.0,
+          "aqua": -10.0,
+          "blue": -18.8
+        }
+      },
+      "tested_strengths": [
+        0.35,
+        0.65
+      ],
+      "default_strength": 0.35,
+      "evaluation": {
+        "date": "2026-10-25",
+        "primary_visual_review": true,
+        "independent_visual_review": false,
+        "independent_visual_limitation": "Local Claude image reads returned upload receipts; no visual pixels available to that reviewer.",
+        "user_preference_verified": false,
+        "scope": [
+          "portrait",
+          "still-life",
+          "outdoor-launch",
+          "neon-raw"
+        ],
+        "not_validated": [
+          "exact film emulation",
+          "Adobe rendering parity",
+          "other skin tones",
+          "daylight vegetation",
+          "group transfer",
+          "native-resolution noise and sharpening"
+        ],
+        "decisions": [
+          {
+            "sample": "portrait",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "黑白目标下脸部、衣服与头盔仍可区分。"
+          },
+          {
+            "sample": "portrait",
+            "strength": 0.65,
+            "decision": "accept",
+            "reason": "黑白图层次仍保留；与弱档收益接近，默认仍选弱档。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "黑白后白杯、咖啡与深色盘面仍有层次。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.65,
+            "decision": "accept",
+            "reason": "黑白明度关系可用；无须为颗粒额外改锐化。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "黑白目标下火箭/钢结构和点光源可辨。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "天空与结构更硬，默认保留弱档。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "黑白目标下灯牌与街道的明度节奏可读；不保留原红蓝色彩是有意取舍。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "灯牌明度对比增强，默认保留弱档并保留更深暗部信息。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chrome-muted",
+      "name": "Fujifilm Classic Chrome",
+      "status": "auto-pass-limited-scope",
+      "source": {
+        "path": "Presets/Color-Negative/Fujifilm Classic Chrome.xmp",
+        "url": "https://github.com/peva3/EmulsionPresets/blob/0cdb71c60603867a046bc92c63617feec7894dd1/Presets/Color-Negative/Fujifilm%20Classic%20Chrome.xmp",
+        "sha256": "2f2cc9333dd3f43bcf23433e1cabee83c79d3672ebdcbfb1b4a9fe2a2d1daee2",
+        "original_exposure": "0",
+        "original_grain": {
+          "GrainAmount": "22.5",
+          "GrainSize": "25",
+          "GrainRoughness": "50"
+        }
+      },
+      "settings": {
+        "light": {
+          "contrast": 22.0,
+          "blacks": -22.0
+        },
+        "color": {
+          "saturation": -7.5,
+          "vibrance": -2.5
+        },
+        "mixer": {
+          "red": {
+            "sat": -22.5,
+            "lum": -15.0
+          },
+          "orange": {
+            "hue": 2.5,
+            "sat": -15.0,
+            "lum": -10.0
+          },
+          "yellow": {
+            "lum": -7.5
+          },
+          "green": {
+            "hue": -20.0,
+            "sat": -30.0,
+            "lum": -20.0
+          },
+          "aqua": {
+            "hue": 10.0,
+            "sat": -20.0,
+            "lum": -10.0
+          },
+          "blue": {
+            "hue": -7.5,
+            "sat": -26.0,
+            "lum": -17.5
+          },
+          "purple": {
+            "hue": -15.0,
+            "sat": -25.0,
+            "lum": -10.0
+          },
+          "magenta": {
+            "sat": -22.5,
+            "lum": -15.0
+          }
+        },
+        "grading": {
+          "highlights": {
+            "hue": 50.0,
+            "sat": 4.5
+          },
+          "shadows": {
+            "hue": 212.0,
+            "sat": 8.0
+          },
+          "blending": 50.0,
+          "balance": -5.0
+        }
+      },
+      "tested_strengths": [
+        0.35,
+        0.65
+      ],
+      "default_strength": 0.35,
+      "evaluation": {
+        "date": "2026-10-25",
+        "primary_visual_review": true,
+        "independent_visual_review": false,
+        "independent_visual_limitation": "Local Claude image reads returned upload receipts; no visual pixels available to that reviewer.",
+        "user_preference_verified": false,
+        "scope": [
+          "portrait",
+          "still-life",
+          "outdoor-launch",
+          "neon-raw"
+        ],
+        "not_validated": [
+          "exact film emulation",
+          "Adobe rendering parity",
+          "other skin tones",
+          "daylight vegetation",
+          "group transfer",
+          "native-resolution noise and sharpening"
+        ],
+        "decisions": [
+          {
+            "sample": "portrait",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "纪实低彩度目标下橙色不再抢眼，脸部仍可读；不冒称自然人像改善。"
+          },
+          {
+            "sample": "portrait",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "皮肤和橙色衣服一起压明度，高档可能显闷。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "按低彩度目标削弱红橙，保留杯/盘/木纹层次。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "符合低彩度但更沉闷，无需比弱档继续减色。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "较克制的蓝色与较深反差保留火箭分离。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "蓝天和暗结构更深，主体层次的余量减少。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "低彩度方向可见，灯牌辨识与街道层次仍在。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "弱化霓虹与暗街道同时发生，默认不继续加强。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gold-warm",
+      "name": "Kodak Gold 200",
+      "status": "auto-pass-limited-scope",
+      "source": {
+        "path": "Presets/Color-Negative/Kodak Gold 200.xmp",
+        "url": "https://github.com/peva3/EmulsionPresets/blob/0cdb71c60603867a046bc92c63617feec7894dd1/Presets/Color-Negative/Kodak%20Gold%20200.xmp",
+        "sha256": "a8605b25c3aa04ecd3a90533607dbba6c53eb66ec0f288668c30f4cc07db3971",
+        "original_exposure": "+0.15",
+        "original_grain": {
+          "GrainAmount": "35",
+          "GrainSize": "27.5",
+          "GrainRoughness": "50"
+        }
+      },
+      "settings": {
+        "light": {
+          "contrast": -5.0,
+          "blacks": 20.0
+        },
+        "mixer": {
+          "red": {
+            "hue": 7.5,
+            "sat": 10.0
+          },
+          "orange": {
+            "hue": -2.5,
+            "sat": 15.0,
+            "lum": 15.0
+          },
+          "yellow": {
+            "hue": -12.5,
+            "sat": 20.0,
+            "lum": 10.0
+          },
+          "green": {
+            "hue": -22.5,
+            "sat": -15.0,
+            "lum": -7.5
+          },
+          "aqua": {
+            "hue": -12.5,
+            "sat": -5.0
+          },
+          "blue": {
+            "hue": -10.0,
+            "sat": -15.0,
+            "lum": -10.0
+          },
+          "purple": {
+            "hue": -15.0,
+            "sat": -22.5
+          },
+          "magenta": {
+            "hue": -15.0,
+            "sat": -22.5
+          }
+        },
+        "grading": {
+          "highlights": {
+            "hue": 50.0,
+            "sat": 15.0
+          },
+          "shadows": {
+            "hue": 207.5,
+            "sat": 17.5
+          },
+          "blending": 50.0,
+          "balance": -30.0
+        }
+      },
+      "tested_strengths": [
+        0.35,
+        0.65
+      ],
+      "default_strength": 0.35,
+      "evaluation": {
+        "date": "2026-10-25",
+        "primary_visual_review": true,
+        "independent_visual_review": false,
+        "independent_visual_limitation": "Local Claude image reads returned upload receipts; no visual pixels available to that reviewer.",
+        "user_preference_verified": false,
+        "scope": [
+          "portrait",
+          "still-life",
+          "neon-raw"
+        ],
+        "not_validated": [
+          "exact film emulation",
+          "Adobe rendering parity",
+          "other skin tones",
+          "daylight vegetation",
+          "group transfer",
+          "native-resolution noise and sharpening"
+        ],
+        "decisions": [
+          {
+            "sample": "portrait",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "暖调目标下黄橙略增强，尚保留肤色与衣服区分；只接受弱强度。"
+          },
+          {
+            "sample": "portrait",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "肤色和背景更偏黄，弱档更稳妥。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "已有暖色基础上弱加暖色，杯口与反光仍可辨；不作为商品标准色。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.65,
+            "decision": "reject",
+            "reason": "已暖的杯/盘与木面进一步黄橙化，白杯的中性色可信度变差，保留弱档。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "暖灯/蓝天关系未受明显损害，但不证明Gold是此图更好的选择。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "暖色更明显但未见相应收益，保留弱档/基线。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "店铺暖光略突出，红蓝灯牌与夜景黑位保留。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "暖色强调增大，无明确收益超过弱档。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "portra-soft",
+      "name": "Kodak Portra 400",
+      "status": "auto-pass-limited-scope",
+      "source": {
+        "path": "Presets/Color-Negative/Kodak Portra 400.xmp",
+        "url": "https://github.com/peva3/EmulsionPresets/blob/0cdb71c60603867a046bc92c63617feec7894dd1/Presets/Color-Negative/Kodak%20Portra%20400.xmp",
+        "sha256": "33ab8e9cf4ed8e2a4ac24c29cadce6b22216f58cd8251d1b3a314c7661dbc8bc",
+        "original_exposure": "+0.50",
+        "original_grain": {
+          "GrainAmount": "28",
+          "GrainSize": "25",
+          "GrainRoughness": "50"
+        }
+      },
+      "settings": {
+        "light": {
+          "contrast": -7.5,
+          "blacks": 12.0
+        },
+        "mixer": {
+          "orange": {
+            "hue": -3.0,
+            "sat": -5.0,
+            "lum": 15.0
+          },
+          "yellow": {
+            "hue": -8.0
+          },
+          "green": {
+            "hue": -15.0,
+            "sat": -22.5
+          },
+          "aqua": {
+            "sat": -10.0
+          },
+          "blue": {
+            "hue": -5.0,
+            "sat": -15.0,
+            "lum": -10.0
+          }
+        },
+        "grading": {
+          "highlights": {
+            "hue": 45.0,
+            "sat": 12.0
+          },
+          "shadows": {
+            "hue": 210.0,
+            "sat": 8.0
+          },
+          "blending": 50.0
+        }
+      },
+      "tested_strengths": [
+        0.35,
+        0.65
+      ],
+      "default_strength": 0.35,
+      "evaluation": {
+        "date": "2026-10-25",
+        "primary_visual_review": true,
+        "independent_visual_review": false,
+        "independent_visual_limitation": "Local Claude image reads returned upload receipts; no visual pixels available to that reviewer.",
+        "user_preference_verified": false,
+        "scope": [
+          "portrait",
+          "still-life"
+        ],
+        "not_validated": [
+          "exact film emulation",
+          "Adobe rendering parity",
+          "other skin tones",
+          "daylight vegetation",
+          "group transfer",
+          "native-resolution noise and sharpening"
+        ],
+        "decisions": [
+          {
+            "sample": "portrait",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "弱柔化反差，橙色衣服与皮肤仍可信，黑头盔未明显泛灰。"
+          },
+          {
+            "sample": "portrait",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "更暖、更柔但收益有限，未优于弱档。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "反差略柔和，暖色主体与白杯层次保留。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "白杯更偏暖、黑盘略柔，不如弱档稳妥。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "弱效果可见但柔和目标在这张图上的改善有限，不据此扩大风景适用范围。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "没有足够证据认为较强柔化优于弱档或基线。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "灯牌仍可辨，但柔和与黑位取舍不是此图自然夜景的确定改善。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "抬黑与暖高光更加明显，目标需要进一步限定。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cine-cool-warm",
+      "name": "Cinestill 800T",
+      "status": "auto-pass-limited-scope",
+      "source": {
+        "path": "Presets/Creative/Cinestill 800T.xmp",
+        "url": "https://github.com/peva3/EmulsionPresets/blob/0cdb71c60603867a046bc92c63617feec7894dd1/Presets/Creative/Cinestill%20800T.xmp",
+        "sha256": "7f875e4de5e1cde08e1341fc7340a57888e8832b2798b24a1ba8ac01e8b80087",
+        "original_exposure": "+0.75",
+        "original_grain": {
+          "GrainAmount": "40",
+          "GrainSize": "22.5",
+          "GrainRoughness": "50"
+        }
+      },
+      "settings": {
+        "light": {
+          "contrast": 15.0,
+          "blacks": -15.0
+        },
+        "effects": {
+          "clarity": -7.5,
+          "dehaze": -7.5
+        },
+        "grading": {
+          "highlights": {
+            "hue": 50.0,
+            "sat": 12.5
+          },
+          "shadows": {
+            "hue": 210.0,
+            "sat": 25.0
+          },
+          "blending": 75.0
+        },
+        "curve": {
+          "master": [
+            [
+              0.0,
+              0.0784313725490196
+            ],
+            [
+              0.25098039215686274,
+              0.21568627450980393
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255
+            ],
+            [
+              0.7529411764705882,
+              0.7686274509803922
+            ],
+            [
+              1.0,
+              0.9215686274509803
+            ]
+          ]
+        }
+      },
+      "tested_strengths": [
+        0.35,
+        0.65
+      ],
+      "default_strength": 0.35,
+      "evaluation": {
+        "date": "2026-10-25",
+        "primary_visual_review": true,
+        "independent_visual_review": false,
+        "independent_visual_limitation": "Local Claude image reads returned upload receipts; no visual pixels available to that reviewer.",
+        "user_preference_verified": false,
+        "scope": [
+          "outdoor-launch",
+          "neon-raw"
+        ],
+        "not_validated": [
+          "exact film emulation",
+          "Adobe rendering parity",
+          "other skin tones",
+          "daylight vegetation",
+          "group transfer",
+          "native-resolution noise and sharpening"
+        ],
+        "decisions": [
+          {
+            "sample": "portrait",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "冷暖方向并非此图自然肤色目标，褪色会改变黑头盔体积；未提升为人像配方。"
+          },
+          {
+            "sample": "portrait",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "matte使黑头盔更灰，不作为自然人像路径。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "黑盘变灰是matte方向，未见必要目标收益；不能仅凭曲线变动算改善。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.65,
+            "decision": "reject",
+            "reason": "黑盘和木纹反差明显变软，泛灰代价超过本场景可见收益。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "弱柔化与冷天暖灯关系协调；限制在此蓝调样本。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "matte与柔化更强，默认弱档保留深蓝天空层次。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.35,
+            "decision": "accept",
+            "reason": "弱冷暖/柔化保留主要灯牌和深夜氛围，尚未出现高档明显泛灰。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.65,
+            "decision": "reject",
+            "reason": "楼体暗部明显泛灰；自然夜景目标下淘汰高档，若指定褪色目标另行评价。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "velvia-vivid",
+      "name": "Fuji Velvia 50",
+      "status": "candidate",
+      "source": {
+        "path": "Presets/Slide/Fuji Velvia 50.xmp",
+        "url": "https://github.com/peva3/EmulsionPresets/blob/0cdb71c60603867a046bc92c63617feec7894dd1/Presets/Slide/Fuji%20Velvia%2050.xmp",
+        "sha256": "512cbf495c35c27ac82e02c14312e75483041eeecb49fe8bb7fde3d70c9f4d3a",
+        "original_exposure": null,
+        "original_grain": {
+          "GrainAmount": "5",
+          "GrainSize": "25",
+          "GrainRoughness": "50"
+        }
+      },
+      "settings": {
+        "light": {
+          "contrast": 40.0,
+          "blacks": -30.0
+        },
+        "color": {
+          "saturation": -5.0
+        },
+        "mixer": {
+          "red": {
+            "hue": 15.0,
+            "sat": 22.5
+          },
+          "orange": {
+            "hue": -10.0,
+            "sat": 20.0,
+            "lum": 7.5
+          },
+          "yellow": {
+            "hue": -17.5,
+            "sat": 12.5,
+            "lum": 7.5
+          },
+          "green": {
+            "hue": -22.5,
+            "sat": 35.0,
+            "lum": -15.0
+          },
+          "aqua": {
+            "hue": 15.0,
+            "sat": -15.0,
+            "lum": -15.0
+          },
+          "blue": {
+            "hue": -7.5,
+            "sat": 26.3,
+            "lum": -22.5
+          },
+          "purple": {
+            "hue": 15.0,
+            "sat": 15.0
+          },
+          "magenta": {
+            "hue": 10.0,
+            "sat": 20.0
+          }
+        },
+        "grading": {
+          "highlights": {
+            "hue": 50.0,
+            "sat": 7.5
+          },
+          "shadows": {
+            "hue": 230.0,
+            "sat": 10.0
+          },
+          "blending": 75.0,
+          "balance": -5.0
+        },
+        "curve": {
+          "master": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.16470588235294117,
+              0.10980392156862745
+            ],
+            [
+              0.5019607843137255,
+              0.5019607843137255
+            ],
+            [
+              0.8352941176470589,
+              0.9019607843137255
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "tested_strengths": [
+        0.35,
+        0.65
+      ],
+      "default_strength": 0.35,
+      "evaluation": {
+        "date": "2026-10-25",
+        "primary_visual_review": true,
+        "independent_visual_review": false,
+        "independent_visual_limitation": "Local Claude image reads returned upload receipts; no visual pixels available to that reviewer.",
+        "user_preference_verified": false,
+        "scope": [],
+        "not_validated": [
+          "exact film emulation",
+          "Adobe rendering parity",
+          "other skin tones",
+          "daylight vegetation",
+          "group transfer",
+          "native-resolution noise and sharpening"
+        ],
+        "decisions": [
+          {
+            "sample": "portrait",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "橙色衣服与皮肤共用色系；鲜艳目标不能自动覆盖自然肤色诉求。"
+          },
+          {
+            "sample": "portrait",
+            "strength": 0.65,
+            "decision": "reject",
+            "reason": "肤色与橙衣一起浓艳，不能满足自然肤色保留目标。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "主体本来饱和，增加浓度价值不确定，须防盘面红橙剪切。"
+          },
+          {
+            "sample": "still-life",
+            "strength": 0.65,
+            "decision": "reject",
+            "reason": "任意通道≥254的近白像素增加约1.562个百分点（剪切检查线索），红橙更浓且亮部层次变硬。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "蓝天更浓但没有绿色植被/日光风景材料，不将其提升为通用风景通过。"
+          },
+          {
+            "sample": "outdoor-launch",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "蓝天更深但缺乏提升此档的收益证据。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.35,
+            "decision": "candidate",
+            "reason": "灯牌本来饱和，额外浓度与深黑位不是可靠的通用改善。"
+          },
+          {
+            "sample": "neon-raw",
+            "strength": 0.65,
+            "decision": "candidate",
+            "reason": "强鲜艳/黑位变化需要更具体目标，不作为默认。"
+          }
+        ]
+      }
+    }
+  ]
+}
